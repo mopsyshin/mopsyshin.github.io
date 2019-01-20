@@ -1,2 +1,12 @@
-# 깃헙 페이지를 활용한 개인 포트폴리오 사이트입니다.
-https://mopsyshin.github.io/
+# STATIC
+
+This directory contains your static files.
+Each file inside this directory is mapped to /.
+
+Example: /static/robots.txt is mapped as /robots.txt.
+
+More information about the usage of this directory in the documentation:
+https://nuxtjs.org/guide/assets#static
+
+**This directory is not required, you can delete it if you don't want to use it.**
+
