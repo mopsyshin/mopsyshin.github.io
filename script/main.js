@@ -1,4 +1,4 @@
 $(document).ready(function(){
-  window.location = 'https://mopsy-blog.firebaseapp.com/';
+  window.location = 'https://mopsiology.firebaseapp.com/';
 });
 
