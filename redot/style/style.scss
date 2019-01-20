@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanssc.css);
+@import "gnb.scss";
+@import "post.scss";
+@import "alert.scss";
+@import "disc.scss";
+@import "page.scss";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+fieldset,img {border:0 none; vertical-align:top;}
+dl,ul,ol,menu,li {list-style:none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
+input,select,textarea,button {vertical-align:middle;}
+button {border:0 none; background-color:transparent; cursor:pointer;}
+body {background:#fff;font:16px/1.2em "MalgunGothic", "굴림", Gulim, Arial, sans-serif;color:#000;}
+th,td,input,select,textarea,button {font:16px/1.2em "MalgunGothic", "굴림", Gulim, Arial, sans-serif;color:#000;}
+a {color:#333;text-decoration:none;}
+a:active, a:hover {text-decoration:underline;}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal;}
+table{width:100%;table-layout:fixed;border-spacing:0;border-collapse:collapse;}
+caption{text-indent:-9999px;height:0px;width:0px;}
+button:focus {
+  outline:none;
+}
+
+::-webkit-scrollbar-track
+ {
+  -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0);
+  border-radius: 2px;
+  background-color: #ffffff;
+  opacity: 0;
+ }
+
+ ::-webkit-scrollbar
+ {
+  width: 0px;
+  background-color: #ffffff;
+  opacity: 0;
+  display: none;
+ }
+
+ ::-webkit-scrollbar-thumb
+ {
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #eee;
+ }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-weight: 300;
+  color: #bbb;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  font-weight: 300;
+  color: #bbb;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  font-weight: 300;
+  color: #bbb;
+}
+:-moz-placeholder { /* Firefox 18- */
+  font-weight: 300;
+  color: #bbb;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+$shadow-1: 1px 2px 4px rgba(0,0,0,0.03);
+$white: #fff;
+$light-grey1: #999;
+$light-grey2: #bbb;
+$light-grey3: #ddd;
+$light-grey4: #f8f8f8;
+$dark-grey1: #666;
+$dark-grey2: #333;
+$point-red: #FF5D6E;
+@mixin background-hover {
+  background-color: #f4f4f4;
+  transition: 0.2s all;
+}
+
+/*  한국어 */
+:lang(ko) {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+#wrap-container {
+  padding-top : 56px;
+}
+#container {
+  transition: all 0.3s;
+}
+#list {
+  transition: all 0,3s;
+}
+
+@media (max-width: 375px){
+  #container {
+    width: 100%;
+  }
+}
+.more_text {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 200;
+  color: #bbb;
+  padding: 4px 12px;
+  position: relative;
+  cursor: pointer;
+}

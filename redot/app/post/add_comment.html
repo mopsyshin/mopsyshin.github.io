@@ -1,0 +1,54 @@
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+
+(function() {
+
+  var textarea = $('#textarea'),
+    originHeight = textarea.height(),
+    originClientHeight = textarea[0].clientHeight,
+    clone = textarea.clone(),
+    extraHeight = parseInt(textarea.css('fontSize')) - 6,
+    timer, content, cloneScrollHeight;
+
+  clone
+    .removeAttr('id')
+    .removeAttr('name')
+    .css({
+      position: 'absolute',
+      top: 0,
+      left: -9999,
+      overflow: 'hidden'
+    }).appendTo('body');
+
+  textarea.focus(function() {
+
+    timer = setInterval(function() {
+      content = textarea.val();
+      clone.val(content);
+      cloneScrollHeight = clone[0].scrollHeight;
+
+      if (originClientHeight < cloneScrollHeight) {
+        textarea.css('height', cloneScrollHeight + extraHeight);
+      } else if (originClientHeight === cloneScrollHeight) {
+        textarea.css('height', originHeight);
+      }
+    }, 100);
+
+  });
+
+  textarea.blur(function() {
+    clearInterval(timer);
+  });
+
+})();
+
+})
+</script>
+
+<div class="container_add_comment">
+  <div class="user_icon"></div>
+  <textarea id="textarea" placeholder="댓글을 입력해주세요"type="text"></textarea>
+  <div class="add_media"></div>
+</div>

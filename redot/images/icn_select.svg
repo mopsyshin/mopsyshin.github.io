@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_select</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="asset" transform="translate(-178.000000, -124.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="icon" transform="translate(50.000000, 83.000000)">
+                <g id="icn_select" transform="translate(128.000000, 41.000000)">
+                    <g transform="translate(1.000000, 1.000000)">
+                        <polygon points="1.3707936 4.25286802 0 5.66403542 5.92282434 12 16 1.42491158 14.6421783 0 5.93592199 9.13643203"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

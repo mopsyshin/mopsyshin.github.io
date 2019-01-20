@@ -1,0 +1,69 @@
+<script>
+$(document).ready(function(){
+    pageFadeIn(".container_channel_page");
+    loadCard();
+    initDisc();
+    new ResizeSensor($("#container"), function() {
+      listSizeFunction();
+      console.log("changed")
+    });
+    initGrid();
+  });
+</script>
+<div class="container_channel_page">
+  <div class="cover ch_cover">
+    <div class="btn_group">
+      <button class="btn_page_setting">
+        <img src="./images/icn_setting.svg" alt="">
+      </button>
+      <button class="btn_subscribe">
+        Subscribe +
+      </button>
+    </div>
+  </div>
+  <div id="list" class="page_list">
+    <div class="page_info">
+      <button class="page_icon">
+        디
+      </button>
+      <div class="info_text">
+        <div class="page_name">@디자인</div>
+        <div class="page_simple_disc">
+          디자인 잘하는 애들 빼고 다모여
+        </div>
+      </div>
+    </div>
+    <div class="wrap_title">
+      <span class="title">
+        최신
+      </span>
+    </div>
+    <div class="grid">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+
+    </div>
+  </div>
+</div>

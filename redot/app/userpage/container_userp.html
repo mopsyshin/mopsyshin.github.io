@@ -1,0 +1,55 @@
+<script>
+$(document).ready(function(){
+    pageFadeIn(".container_userp");
+    initDisc();
+    initUserPage();
+    userpageFunction();
+    new ResizeSensor($("#container"), function() {
+      listSizeFunction();
+      console.log("changed")
+    });
+  });
+</script>
+<div class="container_userp">
+  <div class="cover user_cover">
+    <div class="btn_group">
+      <button class="btn_page_cover_upload">
+        <img src="./images/icn_camera.svg" alt="">
+      </button>
+      <button class="btn_page_setting">
+        <img src="./images/icn_setting.svg" alt="">
+      </button>
+      <button class="btn_subscribe">
+        Follow +
+      </button>
+    </div>
+  </div>
+  <div id="list" class="page_list">
+    <div class="page_info">
+      <button class="page_icon user_icon">
+      </button>
+      <div class="info_text">
+        <div class="page_name user_name">Mopsyshin<span>친구가 100명이 넘는</span></div>
+        <div class="page_simple_disc">
+          아무말이나 잘합니다
+        </div>
+      </div>
+    </div>
+    <div class="page_menu">
+      <div class="left_ele">
+        <div class="btn_menu_item menu_post">POST</div>
+        <div class="btn_menu_item menu_series">SERIES</div>
+        <div class="btn_menu_item menu_comment">COMMENT</div>
+        <div class="btn_menu_item menu_subscribe">SUBSCRIBE</div>
+        <div class="btn_menu_item menu_follow">FOLLOW</div>
+        <div class="btn_menu_item menu_scrap">SCRAP</div>
+        <div class="select_bar"></div>
+      </div>
+      <div class="right_ele">
+        <div class="btn_filter">최신순</div>
+      </div>
+    </div>
+    <div id="contents_container"></div>
+
+  </div>
+</div>

@@ -1,0 +1,307 @@
+::-webkit-scrollbar-track
+{
+ -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0);
+ border-radius: 2px;
+ background-color: #ffffff;
+ opacity: 0;
+}
+
+::-webkit-scrollbar
+{
+ width: 0px;
+ background-color: #ffffff;
+ opacity: 0;
+ display: none;
+}
+
+::-webkit-scrollbar-thumb
+{
+ border-radius: 2px;
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+ background-color: #eee;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'helvetica', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+audio {
+  display: none;
+  opacity: 0;
+}
+.bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #393939;}
+.btn {
+  position: fixed;
+  background-color: #222;
+  width: 90px;
+  height: 90px;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+.btn-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+.btn1, .btn2 {
+  position: absolute;
+}
+.btn .play {
+  background-image: url(./images/play.svg);
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  transform: rotate(0deg);
+  animation-name: play;
+  animation-duration: 0.5s;
+}
+.btn .playpre {
+  background-image: url(./images/play.svg);
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  transform: rotate(360deg);
+  animation-name: pause;
+  animation-duration: 0.5s;
+}
+.btn .pause {
+  background-image: url(./images/pause.svg);
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  transform: rotate(0deg);
+  animation-name: play;
+  animation-duration: 0.5s;
+}
+.btn .pausepre {
+  background-image: url(./images/pause.svg);
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  transform: rotate(360deg);
+  animation-name: pause;
+  animation-duration: 0.5s;
+}
+.side-nav {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  height: 50vh;
+  width: 95vw;
+  max-width: 768px;
+  transform: translate(-50%, 0);
+  background-color: #FF5176;
+  box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  z-index: 99;
+}
+.side-nav ul {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 80px 20px 30px;;
+  height: 100%;
+}
+.side-nav ul li {
+  margin-top: 10px;
+}
+.side-nav ul .line {
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+.side-nav ul .title {
+  font-size: 20px;
+}
+.nav-open {
+  animation-name: opennav;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  bottom: 0;
+}
+.nav-close {
+  animation-name: closenav;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+  opacity: 0;
+  bottom: -300px;
+}
+.wrap-album {
+  position: fixed;
+  width: 60vw;
+  max-width: 600px;
+  height: 60vw;
+  max-height: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.album {
+  position: fixed;
+  background-image: url(./images/puth.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1000px;
+  transform: scale(0);
+  z-index: 50;
+}
+.album-play {
+  animation-name: albumplay;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
+.album-pause {
+  animation-name: albumpause;
+  animation-fill-mode: both;
+  animation-duration: 0.5s;
+}
+
+
+@keyframes opennav {
+    from {
+        bottom: -300px;
+        opacity:0
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+    }
+}
+@keyframes closenav {
+    from {
+        bottom: 0;
+        opacity:1
+    }
+    70% {
+        opacity: 0;
+    }
+    to {
+        bottom: -300px;
+    }
+}
+@keyframes play {
+  from {
+      transform: scale(0);
+      transform: rotate(-135deg);
+      opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes pause {
+  from {
+      transform: scale(1);
+      transform: rotate(0deg);
+      opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+}
+@keyframes albumplay {
+  from {
+    transform: scale(0.2);
+    opacity: 0
+  }
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}
+@keyframes albumpause {
+  from {
+    transform: scale(1);
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+  to {
+    transform: scale(0.2);
+    opacity: 0
+  }
+}
+@keyframes albumplaym {
+  from {
+    transform: scale(0.2);
+    opacity: 0
+  }
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}
+@keyframes albumpausem {
+  from {
+    transform: scale(1);
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+  to {
+    transform: scale(0.2);
+    opacity: 0
+  }
+}
+@media (max-width:768px) {
+  .wrap-album {
+    position: fixed;
+    width: 90vw;
+    height: 90vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .album {
+    width: 90vw;
+    height: 90vw;
+  }
+  .album-play {
+    animation-name: albumplaym;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+  }
+  .album-pause {
+    animation-name: albumpausem;
+    animation-fill-mode: both;
+    animation-duration: 0.5s;
+  }
+}

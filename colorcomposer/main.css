@@ -1,0 +1,82 @@
+html, body, div, ul, li, a, p, button, span {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+button:focus {
+  outline: none; }
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  border-radius: 2px;
+  background-color: #ffffff;
+  opacity: 0; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: #ffffff;
+  opacity: 0;
+  display: none; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #eee; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes opacityIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+#wrapper {
+  z-index: -10;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  animation: opacityIn 1 0.3s; }
+
+.active {
+  display: inline-block;
+  width: 10vw;
+  height: 10vw;
+  background-color: #5aaffd;
+  animation: fadeIn 1 0.3s;
+  transition: all 0.3s;
+  float: left;
+  border: none;
+  z-index: 50;
+  cursor: pointer; }
+  .active:hover {
+    transform: scale(1.3); }
+
+button#refresh {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  z-index: 100;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer; }
+  button#refresh:hover {
+    transform: translate(-50%, -50%) scale(1.3); }
+  button#refresh img {
+    width: 50px; }
+
+/*# sourceMappingURL=main.css.map */

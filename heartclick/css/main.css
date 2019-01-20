@@ -1,0 +1,116 @@
+html, body, div, p, span, ul, li, ol, a, button {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+    font-family: sans-serif;
+}
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+.heart-container {
+    width: 150px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn {
+    z-index: 10;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color:transparent;
+}
+.refresh, .counter{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 120px;
+    opacity: 0.01;
+    transition: all 1s;
+    color: #37e2ae;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    -webkit-tap-highlight-color:transparent;
+}
+.title {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: -20px;
+    transition: all 1s;
+    color: #37e2ae;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.refresh {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid #37e2ae;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 10px 15px;
+}
+.refresh:hover {
+    background-color: #37e2ae;
+    color: #fff;
+}
+.refresh.active, .counter.active {
+    opacity: 1;
+}
+@keyframes finish {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.3);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    opacity: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.img.active {
+    opacity: 1;
+    animation: finish 0.6s infinite;
+}
+.inactive {
+    display: none;
+}
+.img0 {
+    background-image: url("../images/heart-01.svg");
+}
+.img1 {
+    background-image: url("../images/heart-02.svg");
+}
+.img2 {
+    background-image: url("../images/heart-03.svg");
+}
+.img3 {
+    background-image: url("../images/heart-04.svg");
+}
+.img4 {
+    background-image: url("../images/heart-05.svg");
+}
+.img5 {
+    background-image: url("../images/heart-06.svg");
+}

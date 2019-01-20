@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_down_on</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="asset" transform="translate(-110.000000, -96.000000)" fill-rule="nonzero" fill="#FF4B4B">
+            <g id="icon" transform="translate(50.000000, 83.000000)">
+                <g id="icn_down_on" transform="translate(60.000000, 13.000000)">
+                    <g id="btn_down_on" transform="translate(1.000000, 1.000000)">
+                        <polygon id="icn_down_on" points="0.660408825 0 0 0.700029463 5 6 10 0.700029463 9.33959117 0 5 4.59994107"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

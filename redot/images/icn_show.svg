@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icn_show</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="asset" transform="translate(-250.000000, -124.000000)" fill-rule="nonzero" fill="#BBBBBB">
+            <g id="icon" transform="translate(50.000000, 83.000000)">
+                <g id="icn_show" transform="translate(200.000000, 41.000000)">
+                    <g transform="translate(1.000000, 1.000000)">
+                        <path d="M8,10 C5.07506594,10 2.465029,8.39200927 0.175434662,5.2414073 L0,5 L0.175434662,4.7585927 C2.465029,1.60799073 5.07506594,0 8,0 C10.9249341,0 13.534971,1.60799073 15.8245653,4.7585927 L16,5 L15.8245653,5.2414073 C13.534971,8.39200927 10.9249341,10 8,10 Z M8,9.09090909 C10.4377333,9.09090909 12.687053,7.74728266 14.7530509,5 C12.687053,2.25271734 10.4377333,0.909090909 8,0.909090909 C5.56226671,0.909090909 3.312947,2.25271734 1.24694913,5 C3.312947,7.74728266 5.56226671,9.09090909 8,9.09090909 Z" id="Oval-11"></path>
+                        <path d="M8,8 C6.34314575,8 5,6.65685425 5,5 C5,3.34314575 6.34314575,2 8,2 C9.65685425,2 11,3.34314575 11,5 C11,6.65685425 9.65685425,8 8,8 Z M8,7 C9.1045695,7 10,6.1045695 10,5 C10,3.8954305 9.1045695,3 8,3 C6.8954305,3 6,3.8954305 6,5 C6,6.1045695 6.8954305,7 8,7 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

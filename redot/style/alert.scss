@@ -1,0 +1,68 @@
+
+.dim {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 100;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2);
+}
+.alert {
+  z-index: 200;
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+  padding: 24px 30px 36px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.alert p {
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  color: #666;
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.alert div {
+  text-align: center;
+  margin-top: 24px;
+}
+.alert div button {
+  width: 120px;
+  height: 38px;
+  background-color: #fff;
+  transition: all 0.3s;
+  border-radius: 30px;
+  border:1px solid #fff;
+  color: #999;
+  font-size:14px;
+}
+.alert div button:hover {
+  color: #fff;
+  transition: all 0.3s;
+}
+.alert div button.confirm {
+  color: #6CC6FF;
+  margin-left: 10px;
+  border: 1px solid #dff3ff;
+}
+.alert div button.cancle {
+  color: #bbb;
+  border: 1px solid #eee;
+}
+.alert div button.confirm:hover {
+  border: 1px solid #6cc6ff;
+  color: #6CC6FF;
+
+}
+
+.alert div button.cancle:hover {
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,206 @@
+@import './animation.css';
+
+::-webkit-scrollbar-track
+{
+ -webkit-box-shadow: inset 0 0 0 rgba(0,0,0,0);
+ border-radius: 2px;
+ background-color: #ffffff;
+ opacity: 0;
+}
+
+::-webkit-scrollbar
+{
+ width: 0px;
+ background-color: #ffffff;
+ opacity: 0;
+ display: none;
+}
+
+::-webkit-scrollbar-thumb
+{
+ border-radius: 2px;
+ -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+ background-color: #eee;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'helvetica', sans-serif;
+}
+
+@mixin animation($name, $time) {
+  animation-name: $name;
+  animation-duration: $time;
+  animation-fill-mode: forwards;
+}
+
+html,
+body,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #40c6c6;
+}
+.wrap-card {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 400px;
+  min-height: 600px;
+  padding-bottom: 100px;
+  &.close {
+    @include animation(closePanel, 0.6s);
+  }
+  &.opencard {
+    @include animation(openPanel, 0.3s);
+  }
+
+  .card {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    transform-origin: top;
+
+    .title {
+      background-color: #ff6b7c;
+      color: #fff;
+      height: 40px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+      padding-top: 19px;
+      #close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: auto;
+        padding: 20px;
+        cursor: pointer;
+      }
+    }
+    ul {
+      li.content {
+        .list {
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+          transition: all 0.3s;
+          cursor: pointer;
+          z-index: 20;
+          background-color: #fff;
+
+          .profile-image {
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 30px;
+            display: inline-block;
+            position: relative;
+
+            &.p1 {
+              background-image: url(../images/1.jpg);
+            }
+            &.p2 {
+              background-image: url(../images/2.jpg);
+            }
+            &.p3 {
+              background-image: url(../images/3.jpg);
+            }
+            &.p4 {
+              background-image: url(../images/4.jpg);
+            }
+            &.p5 {
+              background-image: url(../images/5.jpg);
+            }
+            &.p6 {
+              background-image: url(../images/6.png);
+            }
+            &.p7 {
+              background-image: url(../images/7.jpg);
+            }
+            &.p8 {
+              background-image: url(../images/8.jpg);
+            }
+            &.activate {
+              @include animation(activateP, 0.3s);
+            }
+            &.deactivate {
+              @include animation(deactivateP, 0.3s);
+
+            }
+            &.init {
+              width: 40px;
+              height: 40px;
+            }
+          }
+          .name {
+            display: inline-block;
+            height: 20px;
+            margin-left: 15px;
+            font-size: 14px;
+            font-weight: 600;
+          }
+        }
+        .wrap-disc {
+          font-size: 14px;
+          color: #999;
+          line-height: 20px;
+          z-index: 5;
+          transform-origin: 50px 50px;
+          &.activate {
+            @include animation(activateDisc, 0.3s);
+          }
+          &.deactivate {
+            @include animation(deactivateDisc, 0.3s);
+
+          }
+          &.init {
+            display: none;
+          }
+
+        }
+
+      }
+    }
+    .bar {
+      width: 100%;
+      height: 1px;
+      background-color: #ddd;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .wrap-card {
+    top: 0;
+  }
+}
+.open {
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  padding: 10px 50px;
+  cursor: pointer;
+  text-align: center;
+}
+@media (max-width: 768px){
+  .open {
+    font-size: 15px;
+  }
+}
